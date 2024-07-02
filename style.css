@@ -138,7 +138,9 @@ table {
   border-spacing: 0;
 }
 section.notice {
+  position: relative;
   padding: 80px 0;
+  top: 20%;
 }
 
 .page-title {
