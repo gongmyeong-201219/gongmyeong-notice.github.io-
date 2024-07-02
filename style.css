@@ -336,10 +336,9 @@ section.notice {
   background: rgb(0, 0, 0);
 }
 
-.dg.ac{
+.dg.ac, .dg.a, .dg ul, .dg.main .close-button {
   display: none;
 }
-
 
 
 
