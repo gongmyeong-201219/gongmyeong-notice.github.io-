@@ -316,10 +316,20 @@ section.notice {
 
 
 
+#myCanvas{
+  position: relative;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  width: -webkit-fill-available;
+  height: 100vh;
+}
 
 #myCanvas canvas{
   height: 100%;
   width: 100%;
   position: absolute;
   z-index: -1;
+  margin: 0 auto;
+  background: rgb(0, 0, 0);
 }
