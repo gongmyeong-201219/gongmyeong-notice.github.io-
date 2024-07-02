@@ -316,7 +316,9 @@ section.notice {
 
 
 
-
+canvas{
+  display: none;
+}
 
 #myCanvas{
   position: relative;
