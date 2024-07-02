@@ -20,7 +20,7 @@ a {
   text-decoration: none;
 }
 
-.scroll {
+#myCanvas .scroll {
   position: absolute;
   bottom: 2rem;
   left: 50%;
@@ -31,7 +31,7 @@ a {
   z-index: 10;
 }
 
-.logo {
+#myCanvas .logo {
   position: absolute;
   top: 1.5rem;
   left: 50%;
@@ -40,50 +40,50 @@ a {
   margin: 0;
   z-index: 10;
 }
-.logo img {
+#myCanvas .logo img {
   display: block;
   height: 3rem;
   width: auto;
 }
 
-ul, li {
+#myCanvas ul, li {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.nav {
+#myCanvas .nav {
   position: absolute;
   top: 2rem;
   z-index: 10;
 }
-.nav--left {
+#myCanvas .nav--left {
   left: 1rem;
 }
-.nav--right {
+#myCanvas .nav--right {
   right: 1rem;
 }
-.nav ul {
+#myCanvas .nav ul {
   display: flex;
   align-items: center;
   height: 1rem;
 }
-.nav li {
+#myCanvas .nav li {
   display: block;
   margin: 0 1rem;
   padding: 0;
 }
-.nav a {
+#myCanvas .nav a {
   position: relative;
   display: flex;
   align-items: center;
   font-size: calc(0.5rem + 0.35vw);
   font-family: "helvetica neue", helvetica, sans-serif;
 }
-.nav a span {
+#myCanvas .nav a span {
   position: relative;
 }
-.nav a span:before {
+#myCanvas .nav a span:before {
   content: "";
   position: absolute;
   left: 0;
@@ -95,12 +95,12 @@ ul, li {
   transform-origin: right;
   transform: scaleX(0);
 }
-.nav a:hover span:before, .nav a.is-active span:before {
+#myCanvas .nav a:hover span:before, .nav a.is-active span:before {
   transform: scaleX(1);
   transform-origin: left;
 }
 
-.vert-text {
+#myCanvas .vert-text {
   position: absolute;
   bottom: 2rem;
   right: 2rem;
@@ -109,7 +109,7 @@ ul, li {
   align-items: center;
   z-index: 10;
 }
-.vert-text span {
+#myCanvas .vert-text span {
   display: block;
   color: #fff;
   text-transform: uppercase;
@@ -119,7 +119,7 @@ ul, li {
   font-size: 1.35rem;
 }
 
-.cart-total {
+#myCanvas .cart-total {
   display: block;
   height: 2rem;
   width: 2rem;
@@ -130,14 +130,14 @@ ul, li {
   margin-left: 1rem;
 }
 
-.slider {
+#myCanvas .slider {
   position: absolute;
   left: 0;
   top: 0;
   right: 0;
   bottom: 0;
 }
-.slider__text {
+#myCanvas .slider__text {
   position: absolute;
   bottom: calc(2rem + 3vw);
   left: calc(2rem + 3vw);
@@ -150,39 +150,39 @@ ul, li {
   font-weight: 500;
   font-family: "Cactus Classical Serif", serif;
 }
-.slider__text-line {
+#myCanvas .slider__text-line {
   overflow: hidden;
 }
-.slider__inner {
+#myCanvas .slider__inner {
   position: absolute;
   left: 0;
   top: 0;
   right: 0;
   bottom: 0;
 }
-.slider__nav {
+#myCanvas .slider__nav {
   position: absolute;
   top: 50%;
   right: 0;
   transform: translateY(-50%);
   z-index: 10;
 }
-.slider-bullet {
+#myCanvas .slider-bullet {
   display: flex;
   align-items: center;
   padding: 1rem 0;
 }
-.slider-bullet__text {
+#myCanvas .slider-bullet__text {
   color: #fff;
   font-size: 0.65rem;
   margin-right: 1rem;
 }
-.slider-bullet__line {
+#myCanvas .slider-bullet__line {
   background-color: #fff;
   height: 1px;
   width: 1rem;
 }
-.slider canvas {
+#myCanvas .slider canvas {
   position: absolute;
   left: 0;
   top: 0;
@@ -190,7 +190,7 @@ ul, li {
   bottom: 0;
 }
 
-.slide {
+#myCanvas .slide {
   position: absolute;
   left: 0;
   top: 0;
@@ -198,7 +198,7 @@ ul, li {
   bottom: 0;
   overflow: hidden;
 }
-.slide__content {
+#myCanvas .slide__content {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -208,7 +208,7 @@ ul, li {
   right: 0;
   bottom: 0;
 }
-.slide__img {
+#myCanvas .slide__img {
   position: relative;
   width: 25vw;
   height: 70vh;
@@ -217,13 +217,13 @@ ul, li {
   min-width: 12.5rem;
   transform-origin: top;
 }
-.slide__img:first-child {
+#myCanvas .slide__img:first-child {
   top: -1.5rem;
 }
-.slide__img:last-child {
+#myCanvas .slide__img:last-child {
   bottom: -1.5rem;
 }
-.slide__img img {
+#myCanvas .slide__img img {
   display: block;
   position: absolute;
   left: 0;
@@ -237,48 +237,48 @@ ul, li {
 
 
 
-table {
+#myCanvas table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-section.notice {
+#myCanvas section.notice {
   padding: 80px 0;
 }
 
-.page-title {
+#myCanvas .page-title {
   margin-bottom: 60px;
 }
-.page-title h3 {
+#myCanvas .page-title h3 {
   font-size: 28px;
   color: #333333;
   font-weight: 400;
   text-align: center;
 }
 
-#board-search .search-window {
+#myCanvas #board-search .search-window {
   padding: 15px 0;
   background-color: #f9f7f9;
 }
-#board-search .search-window .search-wrap {
+#myCanvas #board-search .search-window .search-wrap {
   position: relative;
 /*   padding-right: 124px; */
   margin: 0 auto;
   width: 80%;
   max-width: 564px;
 }
-#board-search .search-window .search-wrap input {
+#myCanvas #board-search .search-window .search-wrap input {
   height: 40px;
   width: 100%;
   font-size: 14px;
   padding: 7px 14px;
   border: 1px solid #ccc;
 }
-#board-search .search-window .search-wrap input:focus {
+#myCanvas #board-search .search-window .search-wrap input:focus {
   border-color: #333;
   outline: 0;
   border-width: 1px;
 }
-#board-search .search-window .search-wrap .btn {
+#myCanvas #board-search .search-window .search-wrap .btn {
   position: absolute;
   right: 0;
   top: 0;
@@ -288,57 +288,57 @@ section.notice {
   font-size: 16px;
 }
 
-.board-table {
+#myCanvas .board-table {
   font-size: 13px;
   width: 100%;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
 }
 
-.board-table a {
+#myCanvas .board-table a {
   color: #333;
   display: inline-block;
   line-height: 1.4;
   word-break: break-all;
   vertical-align: middle;
 }
-.board-table a:hover {
+#myCanvas .board-table a:hover {
   text-decoration: underline;
 }
-.board-table th {
+#myCanvas .board-table th {
   text-align: center;
 }
 
-.board-table .th-num {
+#myCanvas .board-table .th-num {
   width: 100px;
   text-align: center;
 }
 
-.board-table .th-date {
+#myCanvas .board-table .th-date {
   width: 200px;
 }
 
-.board-table th, .board-table td {
+#myCanvas .board-table th, .board-table td {
   padding: 14px 0;
 }
 
-.board-table tbody td {
+#myCanvas .board-table tbody td {
   border-top: 1px solid #e7e7e7;
   text-align: center;
 }
 
-.board-table tbody th {
+#myCanvas .board-table tbody th {
   padding-left: 28px;
   padding-right: 14px;
   border-top: 1px solid #e7e7e7;
   text-align: left;
 }
 
-.board-table tbody th p{
+#myCanvas .board-table tbody th p{
   display: none;
 }
 
-.btn {
+#myCanvas .btn {
   display: inline-block;
   padding: 0 30px;
   font-size: 15px;
@@ -366,23 +366,23 @@ section.notice {
   transition: all 0.3s;
 }
 
-.btn-dark {
+#myCanvas .btn-dark {
   background: #555;
   color: #fff;
 }
 
-.btn-dark:hover, .btn-dark:focus {
+#myCanvas .btn-dark:hover, .btn-dark:focus {
   background: #373737;
   border-color: #373737;
   color: #fff;
 }
 
-.btn-dark {
+#myCanvas .btn-dark {
   background: #555;
   color: #fff;
 }
 
-.btn-dark:hover, .btn-dark:focus {
+#myCanvas .btn-dark:hover, .btn-dark:focus {
   background: #373737;
   border-color: #373737;
   color: #fff;
@@ -397,7 +397,7 @@ section.notice {
   margin: 0;
   box-sizing: border-box;
 }
-.clearfix:after {
+#myCanvas .clearfix:after {
   content: '';
   display: block;
   clear: both;
