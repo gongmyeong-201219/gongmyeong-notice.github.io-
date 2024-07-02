@@ -20,7 +20,7 @@ a {
   text-decoration: none;
 }
 
-#myCanvas .scroll {
+.scroll {
   position: absolute;
   bottom: 2rem;
   left: 50%;
@@ -31,7 +31,7 @@ a {
   z-index: 10;
 }
 
-#myCanvas .logo {
+.logo {
   position: absolute;
   top: 1.5rem;
   left: 50%;
@@ -40,50 +40,50 @@ a {
   margin: 0;
   z-index: 10;
 }
-#myCanvas .logo img {
+.logo img {
   display: block;
   height: 3rem;
   width: auto;
 }
 
-#myCanvas ul, li {
+ul, li {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-#myCanvas .nav {
+.nav {
   position: absolute;
   top: 2rem;
   z-index: 10;
 }
-#myCanvas .nav--left {
+.nav--left {
   left: 1rem;
 }
-#myCanvas .nav--right {
+.nav--right {
   right: 1rem;
 }
-#myCanvas .nav ul {
+.nav ul {
   display: flex;
   align-items: center;
   height: 1rem;
 }
-#myCanvas .nav li {
+.nav li {
   display: block;
   margin: 0 1rem;
   padding: 0;
 }
-#myCanvas .nav a {
+.nav a {
   position: relative;
   display: flex;
   align-items: center;
   font-size: calc(0.5rem + 0.35vw);
   font-family: "helvetica neue", helvetica, sans-serif;
 }
-#myCanvas .nav a span {
+.nav a span {
   position: relative;
 }
-#myCanvas .nav a span:before {
+.nav a span:before {
   content: "";
   position: absolute;
   left: 0;
@@ -95,12 +95,12 @@ a {
   transform-origin: right;
   transform: scaleX(0);
 }
-#myCanvas .nav a:hover span:before, .nav a.is-active span:before {
+.nav a:hover span:before, .nav a.is-active span:before {
   transform: scaleX(1);
   transform-origin: left;
 }
 
-#myCanvas .vert-text {
+.vert-text {
   position: absolute;
   bottom: 2rem;
   right: 2rem;
@@ -109,7 +109,7 @@ a {
   align-items: center;
   z-index: 10;
 }
-#myCanvas .vert-text span {
+.vert-text span {
   display: block;
   color: #fff;
   text-transform: uppercase;
@@ -119,7 +119,7 @@ a {
   font-size: 1.35rem;
 }
 
-#myCanvas .cart-total {
+.cart-total {
   display: block;
   height: 2rem;
   width: 2rem;
@@ -130,155 +130,51 @@ a {
   margin-left: 1rem;
 }
 
-#myCanvas .slider {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-}
-#myCanvas .slider__text {
-  position: absolute;
-  bottom: calc(2rem + 3vw);
-  left: calc(2rem + 3vw);
-  z-index: 10;
-  font-size: calc(1rem + 4vw);
-  text-transform: uppercase;
-  transform-origin: top;
-  line-height: 1.075;
-  color: #fff;
-  font-weight: 500;
-  font-family: "Cactus Classical Serif", serif;
-}
-#myCanvas .slider__text-line {
-  overflow: hidden;
-}
-#myCanvas .slider__inner {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-}
-#myCanvas .slider__nav {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  z-index: 10;
-}
-#myCanvas .slider-bullet {
-  display: flex;
-  align-items: center;
-  padding: 1rem 0;
-}
-#myCanvas .slider-bullet__text {
-  color: #fff;
-  font-size: 0.65rem;
-  margin-right: 1rem;
-}
-#myCanvas .slider-bullet__line {
-  background-color: #fff;
-  height: 1px;
-  width: 1rem;
-}
-#myCanvas .slider canvas {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-}
-
-#myCanvas .slide {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  overflow: hidden;
-}
-#myCanvas .slide__content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-}
-#myCanvas .slide__img {
-  position: relative;
-  width: 25vw;
-  height: 70vh;
-  padding: 0;
-  margin: 0;
-  min-width: 12.5rem;
-  transform-origin: top;
-}
-#myCanvas .slide__img:first-child {
-  top: -1.5rem;
-}
-#myCanvas .slide__img:last-child {
-  bottom: -1.5rem;
-}
-#myCanvas .slide__img img {
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
 
 
 
-
-#myCanvas table {
+table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-#myCanvas section.notice {
+section.notice {
   padding: 80px 0;
 }
 
-#myCanvas .page-title {
+.page-title {
   margin-bottom: 60px;
 }
-#myCanvas .page-title h3 {
+.page-title h3 {
   font-size: 28px;
   color: #333333;
   font-weight: 400;
   text-align: center;
 }
 
-#myCanvas #board-search .search-window {
+#board-search .search-window {
   padding: 15px 0;
   background-color: #f9f7f9;
 }
-#myCanvas #board-search .search-window .search-wrap {
+#board-search .search-window .search-wrap {
   position: relative;
 /*   padding-right: 124px; */
   margin: 0 auto;
   width: 80%;
   max-width: 564px;
 }
-#myCanvas #board-search .search-window .search-wrap input {
+#board-search .search-window .search-wrap input {
   height: 40px;
   width: 100%;
   font-size: 14px;
   padding: 7px 14px;
   border: 1px solid #ccc;
 }
-#myCanvas #board-search .search-window .search-wrap input:focus {
+#board-search .search-window .search-wrap input:focus {
   border-color: #333;
   outline: 0;
   border-width: 1px;
 }
-#myCanvas #board-search .search-window .search-wrap .btn {
+#board-search .search-window .search-wrap .btn {
   position: absolute;
   right: 0;
   top: 0;
@@ -288,57 +184,57 @@ a {
   font-size: 16px;
 }
 
-#myCanvas .board-table {
+.board-table {
   font-size: 13px;
   width: 100%;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
 }
 
-#myCanvas .board-table a {
+.board-table a {
   color: #333;
   display: inline-block;
   line-height: 1.4;
   word-break: break-all;
   vertical-align: middle;
 }
-#myCanvas .board-table a:hover {
+.board-table a:hover {
   text-decoration: underline;
 }
-#myCanvas .board-table th {
+.board-table th {
   text-align: center;
 }
 
-#myCanvas .board-table .th-num {
+.board-table .th-num {
   width: 100px;
   text-align: center;
 }
 
-#myCanvas .board-table .th-date {
+.board-table .th-date {
   width: 200px;
 }
 
-#myCanvas .board-table th, .board-table td {
+.board-table th, .board-table td {
   padding: 14px 0;
 }
 
-#myCanvas .board-table tbody td {
+.board-table tbody td {
   border-top: 1px solid #e7e7e7;
   text-align: center;
 }
 
-#myCanvas .board-table tbody th {
+.board-table tbody th {
   padding-left: 28px;
   padding-right: 14px;
   border-top: 1px solid #e7e7e7;
   text-align: left;
 }
 
-#myCanvas .board-table tbody th p{
+.board-table tbody th p{
   display: none;
 }
 
-#myCanvas .btn {
+.btn {
   display: inline-block;
   padding: 0 30px;
   font-size: 15px;
@@ -366,23 +262,23 @@ a {
   transition: all 0.3s;
 }
 
-#myCanvas .btn-dark {
+.btn-dark {
   background: #555;
   color: #fff;
 }
 
-#myCanvas .btn-dark:hover, .btn-dark:focus {
+.btn-dark:hover, .btn-dark:focus {
   background: #373737;
   border-color: #373737;
   color: #fff;
 }
 
-#myCanvas .btn-dark {
+.btn-dark {
   background: #555;
   color: #fff;
 }
 
-#myCanvas .btn-dark:hover, .btn-dark:focus {
+.btn-dark:hover, .btn-dark:focus {
   background: #373737;
   border-color: #373737;
   color: #fff;
@@ -397,16 +293,16 @@ a {
   margin: 0;
   box-sizing: border-box;
 }
-#myCanvas .clearfix:after {
+.clearfix:after {
   content: '';
   display: block;
   clear: both;
 }
-#myCanvas .container {
+.container {
   width: 1100px;
   margin: 0 auto;
 }
-#myCanvas .blind {
+.blind {
   position: absolute;
   overflow: hidden;
   clip: rect(0 0 0 0);
@@ -418,26 +314,10 @@ a {
 
 
 
-.canvasTTL p{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateY(-50%) translateX(-50%) scale(1.0,1.2);
-  text-align: center;
-  vertical-align: middle;
-  margin: auto;
-  letter-spacing: 0px;
-  font-family: 'Oswald', sans-serif;
-  font-size: 6vw;
-  color: #fff;
-}
-@media screen and (max-width: 1024px) {
-  .canvasTTL p{
-    font-size: 12vw;
-  }
-}
+
+
+
 #myCanvas canvas{
-  background: #03a9f4;
   height: 100%;
   width: 100%;
   position: absolute;
