@@ -59,8 +59,15 @@
         hideGUI: false // GUI 숨기기 여부
       };
 
-      function setGUI() {
-        const gui = new dat.GUI();
+      // GUI 생성
+      let gui;
+      function createGUI() {
+        gui = new dat.GUI({ autoPlace: false }); // 자동으로 DOM에 추가되지 않도록 설정
+        const guiContainer = document.createElement('div');
+        guiContainer.classList.add('custom-gui-container');
+        guiContainer.appendChild(gui.domElement);
+        document.body.appendChild(guiContainer);
+
         gui.add(params, 'amount', 1.0, 10).step(1);
         gui.addColor(params, 'bg_color');
         gui.add(params, 'vx', 1.0, 10).step(0.1);
@@ -69,15 +76,15 @@
         gui.add(params, 'hideGUI').onChange(updateGUIVisibility);
       }
 
-      setGUI();
+      createGUI();
 
       // GUI 숨기기/보이기 함수
       function updateGUIVisibility(hide) {
-        const guiDom = document.querySelector('.dg');
+        const guiContainer = document.querySelector('.custom-gui-container');
         if (hide) {
-          guiDom.style.display = 'none';
+          guiContainer.style.display = 'none';
         } else {
-          guiDom.style.display = 'block';
+          guiContainer.style.display = 'block';
         }
       }
 
