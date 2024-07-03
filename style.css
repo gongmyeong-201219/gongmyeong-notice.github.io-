@@ -329,7 +329,7 @@ section.notice {
       display: none;
     }
 
-#myCanvas{
+/* #myCanvas{
   position: relative;
   z-index: -1;
   left: 0;
@@ -346,15 +346,15 @@ section.notice {
   margin: 0 auto;
   background: rgb(0, 0, 0);
 }
-
+ */
 canvas {
       display: block;
       background-color: #000;
     }
 
-.dg.a, .dg ul, .dg.main .close-button {
+/* .dg.a, .dg ul, .dg.main .close-button {
   display: none;
-}
+} */
 
 .dg.ac {
       display: none !important;
