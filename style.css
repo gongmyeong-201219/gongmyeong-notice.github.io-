@@ -319,10 +319,15 @@ section.notice {
 
 
 
-.custom-gui-container{
-  display: none;
-}
-
+.custom-gui-container {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 1000;
+    }
+.custom-gui-container.hidden {
+      display: none;
+    }
 
 #myCanvas{
   position: relative;
@@ -344,6 +349,7 @@ section.notice {
 
 canvas {
       display: block;
+      background-color: #000;
     }
 
 .dg.a, .dg ul, .dg.main .close-button {
