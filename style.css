@@ -131,10 +131,6 @@ ul, li {
   margin-left: 1rem;
 }
 
-
-
-
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -163,7 +159,6 @@ section.notice {
 }
 #board-search .search-window .search-wrap {
   position: relative;
-/*   padding-right: 124px; */
   margin: 0 auto;
   width: 80%;
   max-width: 564px;
@@ -236,7 +231,7 @@ section.notice {
   text-align: left;
 }
 
-.board-table tbody th p{
+.board-table tbody th p {
   display: none;
 }
 
@@ -317,56 +312,21 @@ section.notice {
   height: 1px;
 }
 
-
-
-
 .custom-gui-container {
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      z-index: -1000;
-    }
-.custom-gui-container.hidden {
-      display: none;
-    }
-
-/* #myCanvas{
-  position: relative;
-  z-index: -1;
-  left: 0;
-  top: 0;
-  width: -webkit-fill-available;
-  height: 100vh;
-}
-
-#myCanvas canvas{
-  height: 100%;
-  width: 100%;
   position: absolute;
-  z-index: -1;
-  margin: 0 auto;
-  background: rgb(0, 0, 0);
+  top: 10px;
+  left: 10px;
+  z-index: -1000;
 }
- */
-canvas {
-      display: block;
-      background-color: #000;
-    }
-
-/* .dg.a, .dg ul, .dg.main .close-button {
+.custom-gui-container.hidden {
   display: none;
-} */
+}
+
+canvas {
+  display: block;
+  background-color: #000;
+}
 
 .dg.ac {
-      display: none !important;
-    }
-
-
-
-
-
-
-
-
-
-
+  display: none !important;
+}
