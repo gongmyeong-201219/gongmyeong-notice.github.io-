@@ -343,7 +343,13 @@ div[style*="position: fixed; top: 0px; left: 0px; cursor: pointer; opacity: 0.9;
   display: none;
 }
 
+.dg.ac {
+    display: none !important;
+}
 
+.dg.main.a {
+    display: none !important;
+}
 
 
 
