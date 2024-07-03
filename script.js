@@ -1,4 +1,4 @@
-(function() {
+ (function() {
       // Canvas 설정
       const canvas = document.querySelector("canvas");
       const ctx = canvas.getContext("2d");
@@ -110,4 +110,21 @@
           particles[i].draw();
         }
 
-        f
+        frameId = requestAnimationFrame(loop);
+        if (frameId % 2 === 0) {
+          return;
+        } // 60fps를 30fps로 만듦
+      }
+
+      loop();
+
+      // 전체 화면 크기 조정
+      window.addEventListener("resize", function() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+      });
+
+      function getRandom(min, max) {
+        return Math.random() * (max - min) + min;
+      }
+    })();
