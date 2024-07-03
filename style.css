@@ -319,8 +319,10 @@ section.notice {
 
 
 
-div[style*="position: fixed; top: 0px; left: 0px; cursor: pointer; opacity: 0.9; z-index: 10000;"] {
-        display: none !important;
+.custom-gui-container{
+  display: none;
+}
+
 
 #myCanvas{
   position: relative;
