@@ -344,11 +344,13 @@ canvas {
       display: block;
     }
 
-.dg.ac, .dg.a, .dg ul, .dg.main .close-button {
+.dg.a, .dg ul, .dg.main .close-button {
   display: none;
 }
 
-
+.dg.ac {
+      display: none !important;
+    }
 
 
 
