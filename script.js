@@ -63,10 +63,6 @@
       let gui;
       function createGUI() {
         gui = new dat.GUI({ autoPlace: false }); // 자동으로 DOM에 추가되지 않도록 설정
-        const guiContainer = document.createElement('div');
-        guiContainer.classList.add('custom-gui-container');
-        guiContainer.appendChild(gui.domElement);
-        document.body.appendChild(guiContainer);
 
         gui.add(params, 'amount', 1.0, 10).step(1);
         gui.addColor(params, 'bg_color');
@@ -74,17 +70,21 @@
         gui.add(params, 'vy', 1.0, 10).step(0.1);
         gui.add(params, 'size', 5, 1000).step(1);
         gui.add(params, 'hideGUI').onChange(updateGUIVisibility);
+
+        // GUI를 custom-gui-container에 추가
+        const guiContainer = document.getElementById('gui-container');
+        guiContainer.appendChild(gui.domElement);
       }
 
       createGUI();
 
       // GUI 숨기기/보이기 함수
       function updateGUIVisibility(hide) {
-        const guiContainer = document.querySelector('.custom-gui-container');
+        const guiContainer = document.getElementById('gui-container');
         if (hide) {
-          guiContainer.style.display = 'none';
+          guiContainer.classList.add('hidden');
         } else {
-          guiContainer.style.display = 'block';
+          guiContainer.classList.remove('hidden');
         }
       }
 
@@ -94,7 +94,7 @@
 
       function loop() {
         ctx.clearRect(0, 0, canvas.width, canvas.height); // 화면 업데이트
-        canvas.style.background = params.bg_color; // 배경색 변경
+        canvas.style.backgroundColor = params.bg_color; // 배경색 변경
         if (frameId % 3 === 0) {
           // 양을 제어
           for (let i = 0; i < params.amount; i++) {
@@ -110,21 +110,4 @@
           particles[i].draw();
         }
 
-        frameId = requestAnimationFrame(loop);
-        if (frameId % 2 === 0) {
-          return;
-        } // 60fps를 30fps로 만듦
-      }
-
-      loop();
-
-      // 전체 화면 크기 조정
-      window.addEventListener("resize", function() {
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-      });
-
-      function getRandom(min, max) {
-        return Math.random() * (max - min) + min;
-      }
-    })();
+        f
