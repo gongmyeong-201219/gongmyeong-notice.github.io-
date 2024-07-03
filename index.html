@@ -25,7 +25,7 @@ SOFTWARE. -->
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-<!--   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>   -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
   <title>共命之鳥-公知</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel="stylesheet" href="./style.css">
@@ -39,6 +39,12 @@ SOFTWARE. -->
   
 </head>
 <body>
+
+<div id="myCanvas">
+  <canvas></canvas>
+  <div class="custom-gui-container" id="gui-container"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.7/dat.gui.min.js"></script>
+</div>
   
 <nav class="nav nav--left js-nav">
   <ul>
@@ -73,12 +79,6 @@ SOFTWARE. -->
     </li>
   </ul>
 </nav>
-
-<div id="myCanvas">
-  <canvas></canvas>
-  <div class="custom-gui-container" id="gui-container"></div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.7/dat.gui.min.js"></script>
-</div>
   
 <section class="notice">
   <div class="page-title">
