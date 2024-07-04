@@ -303,7 +303,7 @@ html {
     clear: both;
   }
   .container {
-    position: fixed;
+    position: relative;
     width: -webkit-fill-available;
     margin: 0 auto;
     left: 0;
