@@ -323,7 +323,7 @@ html {
     position: absolute;
     top: 10px;
     left: 10px;
-    z-index: -1000;
+    z-index: -999;
   }
   .custom-gui-container.hidden {
     display: none;
