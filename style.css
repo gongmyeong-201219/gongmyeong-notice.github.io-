@@ -322,6 +322,11 @@ section.notice {
   display: none;
 }
 
+#myCanvas{
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+}
+
 canvas {
   display: block;
   background-color: #000;
