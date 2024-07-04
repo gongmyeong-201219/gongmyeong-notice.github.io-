@@ -152,8 +152,9 @@ html {
   .page-title h3 {
     font-size: 28px;
     color: #333333;
-    font-weight: 400;
-    text-align: center;
+    font-weight: 600;
+    text-align: left;
+    margin-left: 1.5vh;
   }
   
   #board-search .search-window {
