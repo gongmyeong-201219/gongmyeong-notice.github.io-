@@ -323,8 +323,8 @@ section.notice {
 }
 
 #myCanvas{
-  width: -webkit-fill-available;
-  height: -webkit-fill-available;
+  width: 100vh;
+  height: 100vh;
 }
 
 canvas {
