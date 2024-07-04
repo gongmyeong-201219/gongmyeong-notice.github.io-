@@ -136,11 +136,14 @@ table {
   border-spacing: 0;
 }
 section.notice {
-  position: absolute;
-  display: ruby;
-  padding: 80px 0;
+  position: fixed;
+  width: -webkit-fill-available;
+  height: 25%;
   margin: 0 auto;
+  left: 0;
   top: 20%;
+  padding: 80px 0;
+  background-color: #f9f7f9;
 }
 
 .page-title {
