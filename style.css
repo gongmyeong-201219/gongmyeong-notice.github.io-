@@ -327,7 +327,12 @@ html {
   .custom-gui-container.hidden {
     display: none;
   }
-  
+
+  myCanvas{
+      width: 100vh;
+      height: 100vh;
+  }
+
   canvas {
     display: block;
     background-color: #000;
