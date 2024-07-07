@@ -208,15 +208,18 @@ html {
   }
   .board-table th {
     text-align: center;
+    font-family: "Noto Serif KR", serif;
   }
   
   .board-table .th-num {
     width: 100px;
     text-align: center;
+    font-family: "Noto Serif KR", serif;
   }
   
   .board-table .th-date {
     width: 200px;
+    font-family: "Noto Serif KR", serif;
   }
   
   .board-table th, .board-table td {
@@ -226,6 +229,7 @@ html {
   .board-table tbody td {
     border-top: 1px solid #e7e7e7;
     text-align: center;
+    font-family: "Noto Serif KR", serif;
   }
   
   .board-table tbody th {
@@ -233,6 +237,7 @@ html {
     padding-right: 14px;
     border-top: 1px solid #e7e7e7;
     text-align: left;
+    font-family: "Noto Serif KR", serif;
   }
   
   .board-table tbody th p {
