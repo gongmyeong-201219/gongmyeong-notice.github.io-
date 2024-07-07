@@ -224,6 +224,7 @@ html {
   
   .board-table th, .board-table td {
     padding: 14px 0;
+    font-family: "Noto Serif KR", serif;
   }
   
   .board-table tbody td {
