@@ -155,6 +155,7 @@ html {
     font-weight: 600;
     text-align: left;
     margin-left: 1.5vh;
+      font-family: "Noto Serif KR", serif;
   }
   
   #board-search .search-window {
